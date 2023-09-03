@@ -21,3 +21,17 @@ let nuevoArreglo = numbers.filter(function(numero){
 })
 
 console.log(nuevoArreglo);
+
+//reduce
+let Numeros = [1,2,3,4,5];
+
+Numeros.reduce(function(acc, elemento){
+    console.log(acc);
+    return 1;
+},1)
+
+let suma = Numeros.reduce(function(acc, numero){
+    return acc + numero;
+}, 0)
+
+console.log(suma)
